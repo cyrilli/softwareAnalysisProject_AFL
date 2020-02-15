@@ -1,7 +1,6 @@
 ## Example Usage to fuzz test-instr:
-1. Install american fuzzy lop (afl): http://lcamtuf.coredump.cx/afl/
-- Download afl.
-- Read QuickStartGuide in the doc folder for installation instructions.
+1. Download and install american fuzzy lop (afl): http://lcamtuf.coredump.cx/afl/
+You can find installation and usage instructions under "./docs" folder of AFL, or instructions [here](https://github.com/mykter/afl-training/tree/master/quickstart) might also be helpful.
 
 2. Compile the test-instr program to be fuzzed using afl-gcc.
 ```console
