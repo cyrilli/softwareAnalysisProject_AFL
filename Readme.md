@@ -22,7 +22,7 @@ Looks like a zero to me!
 ```console
 foo@bar:~/path_to_this_project$ afl-fuzz -i inputs/test-instr_inputs -o out ./test-instr
 ```
-For programs that read files as input, refer to afg QuickStartGuide for details. To undestand the status screen of AFL, refer to http://lcamtuf.coredump.cx/afl/status_screen.txt.
+For programs that read files as input, refer to http://lcamtuf.coredump.cx/afl/QuickStartGuide.txt. To undestand the status screen of AFL, refer to http://lcamtuf.coredump.cx/afl/status_screen.txt.
 
 ## Target programs provided:
 1. test-instr.c
