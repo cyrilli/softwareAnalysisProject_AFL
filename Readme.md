@@ -3,7 +3,7 @@
 
 You can find installation and usage instructions under "./docs" folder of AFL, or instructions [here](https://github.com/mykter/afl-training/tree/master/quickstart) might also be helpful.
 
-(Instructions copied from the link above)
+(Installation instructions copied from the link above)
 
 - Install dependencies:
     ```console
