@@ -6,28 +6,28 @@ You can find installation and usage instructions under "./docs" folder of AFL, o
 (Instructions copied from the link above)
 
 - Install dependencies:
-
+    ```console
     $ sudo apt-get install clang-6.0 build-essential llvm-6.0-dev gnuplot-nox
-
+    ```
 - Work around some Ubuntu annoyances
-
+    ```console
     $ sudo update-alternatives --install /usr/bin/clang clang `which clang-6.0` 1
     $ sudo update-alternatives --install /usr/bin/clang++ clang++ `which clang++-6.0` 1
     $ sudo update-alternatives --install /usr/bin/llvm-config llvm-config `which llvm-config-6.0` 1
     $ sudo update-alternatives --install /usr/bin/llvm-symbolizer llvm-symbolizer `which llvm-symbolizer-6.0` 1
-
+    ```
 - Make system not interfere with crash detection:
-
+    ```console
     $ echo core | sudo tee /proc/sys/kernel/core_pattern
-
+    ```
 - Get, build, and install afl:
-
+    ```console
     $ wget http://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz
     $ tar xvf afl-latest.tgz
     $ cd afl-2.52b   # replace with whatever the current version is
     $ make && make -C llvm_mode CXX=g++
     $ make install
-
+    ```
 
 2. Compile the test-instr program to be fuzzed using afl-gcc.
 ```console
