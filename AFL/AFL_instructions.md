@@ -1,4 +1,4 @@
-## Example Usage (fuzz test-instr):
+## Installation and Example Usage (target program: test-instr):
 1. Download and install american fuzzy lop (afl): http://lcamtuf.coredump.cx/afl/
 
 You can find installation and usage instructions under "./docs" folder of AFL, or instructions [here](https://github.com/mykter/afl-training/tree/master/quickstart) might also be helpful.
@@ -42,11 +42,11 @@ foo@bar:~/path_to_this_project$ ./test-instr
 Looks like a zero to me!
 ```
 
-4. Put a small but valid input file for the test-instr program under "inputs/test-instr_inputs" folder
+4. Put a small but valid input file for the test-instr program under "seeds/test-instr_inputs" folder
 
 5. Since all example programs provided reads input from stdin, we can run afl like this:
 ```console
-foo@bar:~/path_to_this_project$ afl-fuzz -i inputs/test-instr_inputs -o out ./test-instr
+foo@bar:~/path_to_this_project$ afl-fuzz -i seeds/test-instr_inputs -o out ./test-instr
 ```
 For programs that read files as input, refer to http://lcamtuf.coredump.cx/afl/QuickStartGuide.txt. To undestand the status screen of AFL, refer to http://lcamtuf.coredump.cx/afl/status_screen.txt.
 
