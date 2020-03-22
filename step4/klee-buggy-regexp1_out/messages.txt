@@ -1,3 +1,0 @@
-KLEE: Using STP solver backend
-KLEE: ERROR: buggy-regexp1.c:26: memory error: out of bound pointer
-KLEE: NOTE: now ignoring this error at this location
