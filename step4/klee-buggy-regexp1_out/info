@@ -1,0 +1,22 @@
+klee --only-output-states-covering-new buggy-regexp1.bc
+PID: 732
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2020-03-10 01:31:50
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2020-03-10 01:31:51
+Elapsed: 00:00:01
+KLEE: done: explored paths = 2618
+KLEE: done: avg. constructs per query = 22
+KLEE: done: total queries = 122
+KLEE: done: valid queries = 12
+KLEE: done: invalid queries = 110
+KLEE: done: query cex = 122
+
+KLEE: done: total instructions = 339519
+KLEE: done: completed paths = 2618
+KLEE: done: generated tests = 15

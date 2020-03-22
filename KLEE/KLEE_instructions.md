@@ -7,7 +7,7 @@ Follow these links for installation instructions on [Ubuntu](https://docs.docker
 2. Pull the docker image provided by KLEE, and then create KLEE docker container
 ```console
 $ docker pull klee/klee:2.0
-$ docker run -ti --name=klee_container klee/klee
+$ docker run -ti --name=klee_container klee/klee:2.0
 ```
 
 3. Both get_sign.c and regexp.c are already in '~/klee_src/examples'. You can then follow the instructions at https://klee.github.io/tutorials/testing-function/ to test them.
